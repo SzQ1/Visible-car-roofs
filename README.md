@@ -1,4 +1,4 @@
-## Visible car roofs
+## Visible car roofs for CBN
  No vanilla parts or vehicles altered. Adds additional roof vechicle parts that occupy `on_roof layer`, it makes it visible when player is out of vehicle. Solar panels or turrets can't be installed on a vehicle tile if there is `visible roof`, it takes their slot, you have to uninstal it from that vehicle tile.
  
  ![obraz](https://cdn.discordapp.com/attachments/696798032875749516/874127769032859678/unknown.png)
