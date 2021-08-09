@@ -1,0 +1,109 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "visible_roof_cloth",
+    "name": { "str": "visible cloth roof" },
+    "symbol": "#",
+    "color": "light_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 15,
+    "description": "A cloth roof.",
+    "folded_volume": 15,
+    "item": "sheet",
+    "location": "on_roof",
+    "requirements": {
+      "install": { "time": "5 m", "components": [ [ [ "string_6", 2 ], [ "duct_tape", 25 ] ] ] },
+      "repair": { "skills": [ [ "tailor", 1 ] ], "time": "150 s", "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+    },
+    "flags": [ "ROOF", "FOLDABLE" ],
+    "breaks_into": "ig_vp_cloth"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "visible_roof_wood",
+    "name": { "str": "visible wooden roof" },
+    "symbol": "#",
+    "color": "light_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 130,
+    "description": "A wooden roof.",
+    "item": "frame_wood",
+    "location": "on_roof",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "30 m", "using": [ [ "vehicle_nail_install", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "15 m", "using": [ [ "vehicle_nail_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "adhesive", 2 ] ] }
+    },
+    "flags": [ "ROOF" ],
+    "breaks_into": [ { "item": "splinter", "count": [ 7, 9 ] } ],
+    "damage_reduction": { "all": 16 }
+  },
+  {
+    "id": "visible_roof_wood_L",
+    "copy-from": "visible_roof_wood",
+    "type": "vehicle_part",
+    "symbol": "L"
+  },
+  {
+    "id": "visible_roof_wood_R",
+    "copy-from": "visible_roof_wood",
+    "type": "vehicle_part",
+    "symbol": "R"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "visible_roof",
+    "name": { "str": "visible roof" },
+    "symbol": "#",
+    "color": "light_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 240,
+    "description": "A metal roof.",
+    "item": "sheet_metal",
+    "location": "on_roof",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "flags": [ "ROOF" ],
+    "breaks_into": "ig_vp_sheet_metal",
+    "damage_reduction": { "all": 28 }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "visible_hdroof",
+    "name": { "str": "visible heavy duty roof" },
+    "symbol": "#",
+    "color": "dark_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 1000,
+    "description": "A thick metal roof.",
+    "item": "steel_plate",
+    "location": "on_roof",
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "flags": [ "ROOF" ],
+    "breaks_into": "ig_vp_steel_plate",
+    "damage_reduction": { "all": 75 }
+  },
+  {
+    "id": "visible_hdroof_L",
+    "copy-from": "visible_hdroof",
+    "type": "vehicle_part",
+    "symbol": "L"
+  },
+  {
+    "id": "visible_hdroof_R",
+    "copy-from": "visible_hdroof",
+    "type": "vehicle_part",
+    "symbol": "R"
+  }
+]

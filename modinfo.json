@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Visible_car_roof",
+    "name": "Visible car roof",
+    "authors": [ "SzQ" ],
+    "description": "Adds additional roof v_parts that occupy on_roof layer, it makes it visible when out of vehicle but also blocks installing turrets, solar panels, etc",
+    "category": "vehicles",
+    "dependencies": [ "dda" ]
+  }
+]
